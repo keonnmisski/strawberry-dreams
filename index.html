@@ -6,10 +6,9 @@
   <title>strawberry dreams ♡ our wishbook</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Nunito:wght@400;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      /* Paleta: crema cálida, café galleta y rosita pastel */
       --bg-cream: #fcf6ee;
       --paper-white: #fffdf9;
       --cookie-light: #f5ebe0;
@@ -28,6 +27,8 @@
       margin: 0;
       padding: 0;
       text-transform: lowercase;
+      font-family: 'Nunito', sans-serif;
+      font-style: normal;
     }
 
     body {
@@ -38,7 +39,6 @@
       background-size: 28px 28px;
       background-position: 0 0, 14px 14px;
       color: var(--cookie-dark);
-      font-family: 'Nunito', sans-serif;
       min-height: 100vh;
       padding: 24px 16px 60px;
     }
@@ -50,8 +50,8 @@
 
     .top-ribbon {
       text-align: center;
-      font-size: 0.85rem;
-      letter-spacing: 0.14em;
+      font-size: 0.88rem;
+      letter-spacing: 0.12em;
       color: var(--cookie-brown);
       margin-bottom: 12px;
       font-weight: 700;
@@ -85,29 +85,32 @@
       padding: 5px 18px;
       border-radius: 999px;
       font-size: 0.84rem;
-      letter-spacing: 0.06em;
-      margin-bottom: 12px;
+      letter-spacing: 0.05em;
+      margin-bottom: 14px;
       font-weight: 700;
     }
 
     h1 {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(1.95rem, 4.5vw, 2.75rem);
-      font-weight: 600;
+      font-size: clamp(1.45rem, 3.5vw, 2.05rem);
+      font-weight: 800;
       color: var(--cookie-dark);
-      line-height: 1.2;
+      line-height: 1.35;
       margin-bottom: 12px;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .subtitle {
-      font-size: 0.95rem;
+      font-size: 0.94rem;
       color: var(--cookie-brown);
       max-width: 640px;
-      margin: 0 auto 22px;
+      margin: 0 auto 24px;
       line-height: 1.65;
+      font-weight: 600;
     }
 
-    /* Barra de progreso café galleta & rosita pastel */
+    /* Barra de progreso */
     .progress-box {
       max-width: 480px;
       margin: 0 auto;
@@ -124,7 +127,7 @@
       font-weight: 700;
       color: var(--cookie-dark);
       margin-bottom: 8px;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.03em;
     }
 
     .progress-track {
@@ -159,7 +162,6 @@
       color: var(--cookie-brown);
       padding: 9px 16px;
       border-radius: 16px;
-      font-family: 'Nunito', sans-serif;
       font-size: 0.88rem;
       font-weight: 700;
       cursor: pointer;
@@ -193,9 +195,8 @@
     }
 
     .sheet-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.65rem;
-      font-style: italic;
+      font-size: 1.25rem;
+      font-weight: 800;
       color: var(--cookie-dark);
     }
 
@@ -205,7 +206,6 @@
       color: var(--cookie-dark);
       padding: 8px 16px;
       border-radius: 999px;
-      font-family: 'Nunito', sans-serif;
       font-size: 0.85rem;
       font-weight: 700;
       cursor: pointer;
@@ -243,7 +243,6 @@
       transform: translateY(-4px);
     }
 
-    /* Cinta washi color galleta y rosa */
     .washi-tape {
       position: absolute;
       top: -10px;
@@ -259,12 +258,12 @@
 
     .status-pill {
       align-self: flex-start;
-      font-size: 0.76rem;
+      font-size: 0.78rem;
       font-weight: 700;
-      padding: 4px 11px;
+      padding: 4px 12px;
       border-radius: 999px;
       margin-bottom: 10px;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.02em;
     }
 
     .status-pending {
@@ -310,7 +309,7 @@
     }
 
     .placeholder-icon {
-      font-size: 1.65rem;
+      font-size: 1.55rem;
       color: var(--pink-soft);
       margin-bottom: 6px;
     }
@@ -319,26 +318,26 @@
       font-size: 0.82rem;
       color: var(--cookie-brown);
       line-height: 1.4;
+      font-weight: 600;
     }
 
     .wish-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.24rem;
-      font-weight: 600;
+      font-size: 0.98rem;
+      font-weight: 700;
       color: var(--cookie-dark);
-      line-height: 1.35;
-      margin-bottom: 8px;
+      line-height: 1.45;
+      margin-bottom: 10px;
     }
 
     .memory-note {
-      font-family: 'Caveat', cursive;
-      font-size: 1.22rem;
+      font-size: 0.88rem;
+      font-weight: 600;
       color: var(--cookie-dark);
       background: var(--pink-blush);
       padding: 8px 12px;
       border-radius: 10px;
       margin-bottom: 10px;
-      line-height: 1.3;
+      line-height: 1.4;
     }
 
     .memory-date {
@@ -346,6 +345,7 @@
       color: var(--cookie-brown);
       margin-bottom: 10px;
       display: block;
+      font-weight: 600;
     }
 
     .card-actions {
@@ -359,7 +359,6 @@
       padding: 8px 12px;
       border-radius: 12px;
       border: none;
-      font-family: 'Nunito', sans-serif;
       font-size: 0.84rem;
       font-weight: 700;
       cursor: pointer;
@@ -402,18 +401,17 @@
 
     .love-note-number {
       font-size: 0.78rem;
-      font-weight: 700;
+      font-weight: 800;
       color: var(--cookie-brown);
-      letter-spacing: 0.1em;
+      letter-spacing: 0.08em;
       margin-bottom: 8px;
     }
 
     .love-note-text {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.32rem;
-      font-style: italic;
+      font-size: 0.98rem;
+      font-weight: 600;
       color: var(--cookie-dark);
-      line-height: 1.45;
+      line-height: 1.55;
       margin-bottom: 14px;
     }
 
@@ -426,9 +424,8 @@
     }
 
     .footer-quote {
-      font-family: 'Cormorant Garamond', serif;
-      font-style: italic;
-      font-size: 1.15rem;
+      font-size: 0.92rem;
+      font-weight: 600;
       color: var(--cookie-brown);
       margin-bottom: 14px;
     }
@@ -448,7 +445,6 @@
       border-radius: 999px;
       font-size: 0.78rem;
       cursor: pointer;
-      font-family: 'Nunito', sans-serif;
       font-weight: 700;
     }
 
@@ -485,8 +481,8 @@
     }
 
     .modal-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.6rem;
+      font-size: 1.35rem;
+      font-weight: 800;
       color: var(--cookie-dark);
       margin-bottom: 14px;
       text-align: center;
@@ -510,7 +506,6 @@
       padding: 10px 12px;
       border: 1.5px solid var(--border-lace);
       border-radius: 12px;
-      font-family: 'Nunito', sans-serif;
       font-size: 0.9rem;
       color: var(--cookie-dark);
       background: var(--bg-cream);
@@ -530,6 +525,7 @@
       border-radius: 12px;
       text-align: center;
       font-size: 0.84rem;
+      font-weight: 700;
       color: var(--cookie-dark);
       cursor: pointer;
     }
@@ -549,7 +545,6 @@
       border-radius: 12px;
       font-weight: 700;
       cursor: pointer;
-      font-family: 'Nunito', sans-serif;
     }
 
     .btn-secondary {
@@ -560,7 +555,6 @@
       border-radius: 12px;
       font-weight: 700;
       cursor: pointer;
-      font-family: 'Nunito', sans-serif;
     }
   </style>
 </head>
@@ -578,7 +572,7 @@
 
       <div class="progress-box">
         <div class="progress-header">
-          <span id="progress-label">𐙚 nuestro progreso: 0 / 0</span>
+          <span id="progress-label">𐙚 nuestro progreso: 0 / 27</span>
           <span id="progress-percent">0%</span>
         </div>
         <div class="progress-track">
@@ -587,10 +581,8 @@
       </div>
     </header>
 
-    <!-- Pestañas del cuaderno -->
     <nav class="tabs-nav" id="tabs-nav"></nav>
 
-    <!-- Contenido de la sección activa -->
     <main>
       <div class="sheet-header">
         <h2 class="sheet-title" id="current-section-title">(♡ˊ͈ ꒳ ˋ͈) pequeños momentos & citas</h2>
@@ -598,3 +590,434 @@
       </div>
 
       <div class="cards-grid" id="cards-container"></div>
+    </main>
+
+    <footer class="footer-tools">
+      <p class="footer-quote">“un deseo escrito, una foto guardada, un recuerdo nuestro para siempre.” ✧</p>
+      <div class="backup-buttons">
+        <button class="small-pill-btn" onclick="exportData()">📥 guardar copia del cuaderno</button>
+        <button class="small-pill-btn" onclick="document.getElementById('import-file').click()">📤 cargar copia guardada</button>
+        <input type="file" id="import-file" accept=".json" style="display:none" onchange="importData(event)" />
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modal para Cumplir Ilusión -->
+  <div class="modal-backdrop" id="fulfill-modal">
+    <div class="modal-box">
+      <h3 class="modal-title">listo ⭑.ᐟ</h3>
+      <p id="modal-wish-preview" style="text-align:center; font-size:0.9rem; color:var(--cookie-brown); margin-bottom:14px; font-weight:600;"></p>
+
+      <div class="form-group">
+        <label>sube la foto polaroid del momento (opcional)</label>
+        <div class="file-upload-box" onclick="document.getElementById('photo-input').click()">
+          <span id="file-chosen-text">📷 haz clic aquí para elegir una imagen</span>
+        </div>
+        <input type="file" id="photo-input" accept="image/*" style="display:none" onchange="previewFileName()" />
+      </div>
+
+      <div class="form-group">
+        <label>fecha del recuerdo</label>
+        <input type="text" id="memory-date-input" placeholder="ej. 16 de noviembre, tarde de lluvia..." />
+      </div>
+
+      <div class="form-group">
+        <label>notita para el álbum</label>
+        <textarea id="memory-note-input" rows="2" placeholder="escribe algo bonito sobre cómo fue este momento..."></textarea>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn-secondary" onclick="closeModal('fulfill-modal')">cancelar</button>
+        <button class="btn-primary" onclick="saveFulfillment()">guardar recuerdo 🎀</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para Añadir Nueva Ilusión o Nota -->
+  <div class="modal-backdrop" id="add-modal">
+    <div class="modal-box">
+      <h3 class="modal-title" id="add-modal-title">🍓 escribir nueva ilusión</h3>
+
+      <div class="form-group">
+        <label id="add-input-label">¿qué te gustaría vivir juntos?</label>
+        <textarea id="new-wish-text" rows="3" placeholder="ej. me gustaría tomar chocolate caliente contigo..."></textarea>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn-secondary" onclick="closeModal('add-modal')">cancelar</button>
+        <button class="btn-primary" onclick="addNewItem()">añadir al cuaderno ✧</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const NOTEBOOK_CONFIG = {
+      badge: "quiero compartir contigo...",
+      title: "todos mis deseos junto a ti, ¿me ayudarías a cumplirlos? (˶˃ ᵕ ˂˶)",
+      subtitle: "he creado un lugar en el cual poner cada una de mis ilusiones contigo, porque es una promesa en lugar de un paso más que queda pendiente; quiero emocionarme con cada trocito de nuestra historia desde el comienzo hasta el futuro.",
+      storageKey: "strawberry_dreams_wishbook_v3",
+      sections: [
+        {
+          id: "citas",
+          tabName: "(♡ˊ͈ ꒳ ˋ͈) pequeños momentos & citas",
+          title: "(♡ˊ͈ ꒳ ˋ͈) pequeños momentos & citas",
+          type: "wish",
+          items: [
+            { id: "c1", text: "bailar juntitos una canción romántica", done: false, photo: "", date: "", note: "" },
+            { id: "c2", text: "ir a una cafetería bonita y compartir nuestro postre favorito con el otro", done: false, photo: "", date: "", note: "" },
+            { id: "c3", text: "comprarnos una pijama a juego", done: false, photo: "", date: "", note: "" }
+          ]
+        },
+        {
+          id: "viajes",
+          tabName: "(♡ˊ͈ ꒳ ˋ͈) viajecitos & escapadas",
+          title: "(♡ˊ͈ ꒳ ˋ͈) viajecitos & escapadas",
+          type: "wish",
+          items: [
+            { id: "v1", text: "¡vamos de camping!", done: false, photo: "", date: "", note: "" },
+            { id: "v2", text: "una tarde caminando por el bosque.", done: false, photo: "", date: "", note: "" },
+            { id: "v3", text: "veamos un atardecer en la playa.", done: false, photo: "", date: "", note: "" },
+            { id: "v4", text: "salgamos a caminar con cookie.", done: false, photo: "", date: "", note: "" },
+            { id: "v5", text: "viajemos a una isla, porfi.", done: false, photo: "", date: "", note: "" }
+          ]
+        },
+        {
+          id: "casita",
+          tabName: "(♡ˊ͈ ꒳ ˋ͈) casita de galleta",
+          title: "(♡ˊ͈ ꒳ ˋ͈) casita de galleta",
+          type: "wish",
+          items: [
+            { id: "g1", text: "adoptemos un gatito juntos y un hámster.", done: false, photo: "", date: "", note: "" },
+            { id: "g2", text: "cocinemos juntitos la cena y comamos viendo cositas graciosas.", done: false, photo: "", date: "", note: "" },
+            { id: "g3", text: "quedémonos en camita el domingo y desayunemos en cama.", done: false, photo: "", date: "", note: "" },
+            { id: "g4", text: "casémonos en un sitio bonito lleno de naturaleza y flores y solecito y verano.", done: false, photo: "", date: "", note: "" },
+            { id: "g5", text: "tengamos un memé.", done: false, photo: "", date: "", note: "" }
+          ]
+        },
+        {
+          id: "navidad",
+          tabName: "(๑•᎑•๑) navidad jun-titos.",
+          title: "(๑•᎑•๑) navidad jun-titos.",
+          type: "wish",
+          items: [
+            { id: "n1", text: "tomar chocolate caliente preparado por nosotros mismos.", done: false, photo: "", date: "", note: "" },
+            { id: "n2", text: "hornear galletitas de navidad de muchas formas.", done: false, photo: "", date: "", note: "" },
+            { id: "n3", text: "armar una casita de jengibre.", done: false, photo: "", date: "", note: "" },
+            { id: "n4", text: "poner el arbolito de navidad y decorar nuestra casita.", done: false, photo: "", date: "", note: "" },
+            { id: "n5", text: "comprar muchos peluches de navidad y suéteres feos.", done: false, photo: "", date: "", note: "" },
+            { id: "n6", text: "darte mi calendario de adviento y obligarte a abrir cada día, mwhehe.", done: false, photo: "", date: "", note: "" },
+            { id: "n7", text: "salir a patinar en el hielo y quedarnos viendo las lucecitas de la ciudad.", done: false, photo: "", date: "", note: "" },
+            { id: "n8", text: "¿podemos viajar a new york y tener una navidad gringa, podemos?", done: false, photo: "", date: "", note: "" },
+            { id: "n9", text: "paseemos por un festival de navidad.", done: false, photo: "", date: "", note: "" }
+          ]
+        },
+        {
+          id: "sanvalentin",
+          tabName: "૮ ྀིᴗ͈ . ᴗ͈ ྀིა san valentín.",
+          title: "૮ ྀིᴗ͈ . ᴗ͈ ྀིა san valentín.",
+          type: "wish",
+          items: [
+            { id: "sv1", text: "celebremos mi cumpleaños en build a bear.", done: false, photo: "", date: "", note: "" },
+            { id: "sv2", text: "paseemos juntitos en un festival de san valentín.", done: false, photo: "", date: "", note: "" },
+            { id: "sv3", text: "compartamos un heladito y démonos besitos.", done: false, photo: "", date: "", note: "" },
+            { id: "sv4", text: "viajemos a la isla de sylvanians porfi.", done: false, photo: "", date: "", note: "" },
+            { id: "sv5", text: "tengamos un picnic. u / u", done: false, photo: "", date: "", note: "" }
+          ]
+        },
+        {
+          id: "parati",
+          tabName: "( •̯́ ₃ •̯̀) especialmente para que leas tú.",
+          title: "( •̯́ ₃ •̯̀) especialmente para que leas tú.",
+          type: "notes",
+          items: [
+            { id: "p1", text: "escribe aquí tu primera cartita o detalle especial para que lo lea al abrir el enlace..." },
+            { id: "p2", text: "puedes agregar todas las notitas que quieras copiando esta línea o usando el botón en la página." }
+          ]
+        }
+      ]
+    };
+
+    let appData = null;
+    try {
+      const saved = localStorage.getItem(NOTEBOOK_CONFIG.storageKey);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          appData = parsed;
+        }
+      }
+    } catch (e) {
+      appData = null;
+    }
+
+    if (!appData) {
+      appData = NOTEBOOK_CONFIG.sections;
+    }
+
+    let activeSectionId = appData[0].id;
+    let currentEditingItemId = null;
+
+    function saveData() {
+      try {
+        localStorage.setItem(NOTEBOOK_CONFIG.storageKey, JSON.stringify(appData));
+      } catch (e) {
+        alert("la imagen es muy pesada para la memoria del navegador. intenta con una foto más ligera.");
+      }
+      updateProgress();
+    }
+
+    function updateProgress() {
+      let totalWishes = 0;
+      let doneWishes = 0;
+
+      appData.forEach(function(sec) {
+        if (sec.type === "wish") {
+          sec.items.forEach(function(item) {
+            totalWishes++;
+            if (item.done) doneWishes++;
+          });
+        }
+      });
+
+      const percent = totalWishes === 0 ? 0 : Math.round((doneWishes / totalWishes) * 100);
+      document.getElementById("progress-label").textContent = "𐙚 nuestro progreso: " + doneWishes + " / " + totalWishes;
+      document.getElementById("progress-percent").textContent = percent + "%";
+      document.getElementById("progress-fill").style.width = percent + "%";
+    }
+
+    function renderTabs() {
+      const nav = document.getElementById("tabs-nav");
+      nav.innerHTML = "";
+      appData.forEach(function(sec) {
+        const btn = document.createElement("button");
+        btn.className = "tab-btn" + (sec.id === activeSectionId ? " active" : "");
+        btn.textContent = sec.tabName;
+        btn.onclick = function() {
+          activeSectionId = sec.id;
+          renderTabs();
+          renderCards();
+        };
+        nav.appendChild(btn);
+      });
+    }
+
+    function renderCards() {
+      const section = appData.find(function(s) { return s.id === activeSectionId; });
+      if (!section) return;
+
+      document.getElementById("current-section-title").textContent = section.title;
+
+      const addBtn = document.getElementById("open-add-btn");
+      addBtn.textContent = section.type === "notes" ? "+ añadir notita especial" : "+ añadir nueva ilusión";
+      addBtn.onclick = function() { openAddModal(section.type); };
+
+      const container = document.getElementById("cards-container");
+      container.innerHTML = "";
+
+      section.items.forEach(function(item, index) {
+        if (section.type === "notes") {
+          const noteCard = document.createElement("div");
+          noteCard.className = "love-note-card";
+          const numStr = String(index + 1).padStart(2, "0");
+          noteCard.innerHTML =
+            '<div class="washi-tape"></div>' +
+            '<div>' +
+              '<div class="love-note-number">notita #' + numStr + ' · ✿</div>' +
+              '<p class="love-note-text">“' + item.text + '”</p>' +
+            '</div>' +
+            '<div style="text-align:right;">' +
+              '<button class="action-btn btn-delete" title="quitar nota" onclick="deleteItem(\'' + item.id + '\')">🗑️ quitar</button>' +
+            '</div>';
+          container.appendChild(noteCard);
+        } else {
+          const card = document.createElement("div");
+          card.className = "polaroid-card";
+
+          const statusHtml = item.done
+            ? '<span class="status-pill status-done">🎀 listo ⭑.ᐟ</span>'
+            : '<span class="status-pill status-pending">✿ aún por vivir...</span>';
+
+          const photoHtml = item.photo
+            ? '<div class="photo-frame has-photo" onclick="openFulfillModal(\'' + item.id + '\')">' +
+                '<img src="' + item.photo + '" alt="recuerdo polaroid" />' +
+              '</div>'
+            : '<div class="photo-frame" onclick="openFulfillModal(\'' + item.id + '\')">' +
+                '<div class="placeholder-icon">' + (item.done ? "✿" : "📷") + '</div>' +
+                '<div class="placeholder-text">' + (item.done ? "haz clic para añadir una foto" : "espacio reservado para nuestra foto polaroid") + '</div>' +
+              '</div>';
+
+          const noteHtml = item.note ? '<div class="memory-note">“' + item.note + '”</div>' : '';
+          const dateHtml = item.date ? '<span class="memory-date">📅 ' + item.date + '</span>' : '';
+
+          card.innerHTML =
+            '<div class="washi-tape"></div>' +
+            '<div>' +
+              statusHtml +
+              photoHtml +
+              '<h3 class="wish-title">' + item.text + '</h3>' +
+              noteHtml +
+              dateHtml +
+            '</div>' +
+            '<div class="card-actions">' +
+              '<button class="action-btn btn-fulfill" onclick="openFulfillModal(\'' + item.id + '\')">' +
+                (item.done ? "✏️ editar recuerdo" : "listo ⭑.ᐟ") +
+              '</button>' +
+              '<button class="action-btn btn-delete" title="eliminar" onclick="deleteItem(\'' + item.id + '\')">🗑️</button>' +
+            '</div>';
+          container.appendChild(card);
+        }
+      });
+    }
+
+    function openFulfillModal(itemId) {
+      const section = appData.find(function(s) { return s.id === activeSectionId; });
+      const item = section.items.find(function(i) { return i.id === itemId; });
+      currentEditingItemId = itemId;
+
+      document.getElementById("modal-wish-preview").textContent = "“" + item.text + "”";
+      document.getElementById("memory-date-input").value = item.date || "";
+      document.getElementById("memory-note-input").value = item.note || "";
+      document.getElementById("photo-input").value = "";
+      document.getElementById("file-chosen-text").textContent = item.photo
+        ? "📷 cambiar foto actual (opcional)"
+        : "📷 haz clic aquí para elegir una imagen";
+
+      document.getElementById("fulfill-modal").classList.add("open");
+    }
+
+    function previewFileName() {
+      const input = document.getElementById("photo-input");
+      if (input.files && input.files[0]) {
+        document.getElementById("file-chosen-text").textContent = "✅ lista: " + input.files[0].name;
+      }
+    }
+
+    function saveFulfillment() {
+      const section = appData.find(function(s) { return s.id === activeSectionId; });
+      const item = section.items.find(function(i) { return i.id === currentEditingItemId; });
+
+      item.done = true;
+      item.date = document.getElementById("memory-date-input").value.trim();
+      item.note = document.getElementById("memory-note-input").value.trim();
+
+      const fileInput = document.getElementById("photo-input");
+      if (fileInput.files && fileInput.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const img = new Image();
+          img.onload = function() {
+            const canvas = document.createElement("canvas");
+            const maxDim = 600;
+            let width = img.width;
+            let height = img.height;
+            if (width > maxDim || height > maxDim) {
+              if (width > height) {
+                height *= maxDim / width;
+                width = maxDim;
+              } else {
+                width *= maxDim / height;
+                height = maxDim;
+              }
+            }
+            canvas.width = width;
+            canvas.height = height;
+            const ctx = canvas.getContext("2d");
+            ctx.drawImage(img, 0, 0, width, height);
+            item.photo = canvas.toDataURL("image/jpeg", 0.82);
+            saveData();
+            renderCards();
+            closeModal("fulfill-modal");
+          };
+          img.src = e.target.result;
+        };
+        reader.readAsDataURL(fileInput.files[0]);
+      } else {
+        saveData();
+        renderCards();
+        closeModal("fulfill-modal");
+      }
+    }
+
+    function openAddModal(type) {
+      document.getElementById("new-wish-text").value = "";
+      document.getElementById("add-modal-title").textContent =
+        type === "notes" ? "💌 escribir notita especial" : "🍓 escribir nueva ilusión";
+      document.getElementById("add-input-label").textContent =
+        type === "notes" ? "¿qué quieres dejar escrito aquí?" : "¿qué te gustaría vivir juntos?";
+      document.getElementById("add-modal").classList.add("open");
+    }
+
+    function addNewItem() {
+      const text = document.getElementById("new-wish-text").value.trim();
+      if (!text) return;
+
+      const section = appData.find(function(s) { return s.id === activeSectionId; });
+      const newId = "item_" + Date.now();
+
+      if (section.type === "notes") {
+        section.items.push({ id: newId, text: text });
+      } else {
+        section.items.push({
+          id: newId,
+          text: text,
+          done: false,
+          photo: "",
+          date: "",
+          note: ""
+        });
+      }
+
+      saveData();
+      renderCards();
+      closeModal("add-modal");
+    }
+
+    function deleteItem(itemId) {
+      if (!confirm("¿seguro que quieres quitar esto del cuaderno?")) return;
+      const section = appData.find(function(s) { return s.id === activeSectionId; });
+      section.items = section.items.filter(function(i) { return i.id !== itemId; });
+      saveData();
+      renderCards();
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.remove("open");
+    }
+
+    function exportData() {
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(appData));
+      const downloadAnchor = document.createElement("a");
+      downloadAnchor.setAttribute("href", dataStr);
+      downloadAnchor.setAttribute("download", "strawberry-dreams-recuerdos.json");
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+    }
+
+    function importData(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const imported = JSON.parse(e.target.result);
+          if (Array.isArray(imported)) {
+            appData = imported;
+            saveData();
+            renderTabs();
+            renderCards();
+            alert("🎀 ¡recuerdos cargados en el cuaderno!");
+          }
+        } catch (err) {
+          alert("el archivo no es válido.");
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    renderTabs();
+    renderCards();
+    updateProgress();
+  </script>
+</body>
+</html>
