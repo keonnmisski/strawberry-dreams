@@ -3,56 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Strawberry Dreams · Cuaderno de Ilusiones</title>
+  <title>strawberry dreams ♡ our wishbook</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Nunito:wght@400;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-cream: #fff9fb;
-      --paper-white: #ffffff;
-      --pink-light: #ffeef4;
-      --pink-pastel: #ffd6e5;
-      --pink-berry: #f28cb0;
-      --pink-deep: #c95b82;
-      --text-main: #5c434d;
-      --text-soft: #967783;
-      --border-lace: #f7c6d8;
-      --shadow-soft: 0 10px 28px rgba(219, 138, 168, 0.14);
-      --gold-accent: #e5b887;
+      /* Paleta: crema cálida, café galleta y rosita pastel */
+      --bg-cream: #fcf6ee;
+      --paper-white: #fffdf9;
+      --cookie-light: #f5ebe0;
+      --cookie-tan: #d5bdaf;
+      --cookie-brown: #8d6e63;
+      --cookie-dark: #5d4037;
+      --pink-pastel: #fad2e1;
+      --pink-soft: #f4acb7;
+      --pink-blush: #fff0f3;
+      --border-lace: #e3d5ca;
+      --shadow-soft: 0 10px 28px rgba(141, 110, 99, 0.12);
     }
 
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      text-transform: lowercase;
     }
 
     body {
       background-color: var(--bg-cream);
       background-image:
-        radial-gradient(#ffd6e5 1px, transparent 1px),
-        radial-gradient(#ffe6ef 1px, var(--bg-cream) 1px);
+        radial-gradient(#e3d5ca 1px, transparent 1px),
+        radial-gradient(#fad2e1 1px, var(--bg-cream) 1px);
       background-size: 28px 28px;
       background-position: 0 0, 14px 14px;
-      color: var(--text-main);
+      color: var(--cookie-dark);
       font-family: 'Nunito', sans-serif;
       min-height: 100vh;
       padding: 24px 16px 60px;
     }
 
-    /* Contenedor tipo Cuaderno */
     .notebook-wrapper {
-      max-width: 980px;
+      max-width: 1000px;
       margin: 0 auto;
     }
 
     .top-ribbon {
       text-align: center;
-      font-size: 0.78rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--pink-deep);
+      font-size: 0.85rem;
+      letter-spacing: 0.14em;
+      color: var(--cookie-brown);
       margin-bottom: 12px;
       font-weight: 700;
     }
@@ -72,46 +72,46 @@
       content: "";
       position: absolute;
       inset: 8px;
-      border: 1.5px dashed var(--pink-pastel);
+      border: 1.5px dashed var(--cookie-tan);
       border-radius: 20px;
       pointer-events: none;
     }
 
     .bow-badge {
       display: inline-block;
-      background: var(--pink-light);
-      color: var(--pink-deep);
-      border: 1px solid var(--border-lace);
-      padding: 4px 16px;
+      background: var(--pink-blush);
+      color: var(--cookie-brown);
+      border: 1px solid var(--pink-pastel);
+      padding: 5px 18px;
       border-radius: 999px;
-      font-size: 0.8rem;
-      letter-spacing: 0.1em;
-      margin-bottom: 10px;
-      font-weight: 600;
+      font-size: 0.84rem;
+      letter-spacing: 0.06em;
+      margin-bottom: 12px;
+      font-weight: 700;
     }
 
     h1 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(2.1rem, 5vw, 3rem);
+      font-size: clamp(1.95rem, 4.5vw, 2.75rem);
       font-weight: 600;
-      color: var(--pink-deep);
-      line-height: 1.15;
-      margin-bottom: 8px;
+      color: var(--cookie-dark);
+      line-height: 1.2;
+      margin-bottom: 12px;
     }
 
     .subtitle {
-      font-size: 0.96rem;
-      color: var(--text-soft);
-      max-width: 580px;
+      font-size: 0.95rem;
+      color: var(--cookie-brown);
+      max-width: 640px;
       margin: 0 auto 22px;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
-    /* Barra de progreso dulce */
+    /* Barra de progreso café galleta & rosita pastel */
     .progress-box {
       max-width: 480px;
       margin: 0 auto;
-      background: var(--pink-light);
+      background: var(--cookie-light);
       padding: 14px 20px;
       border-radius: 18px;
       border: 1px solid var(--border-lace);
@@ -120,17 +120,17 @@
     .progress-header {
       display: flex;
       justify-content: space-between;
-      font-size: 0.82rem;
+      font-size: 0.86rem;
       font-weight: 700;
-      color: var(--pink-deep);
+      color: var(--cookie-dark);
       margin-bottom: 8px;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.04em;
     }
 
     .progress-track {
       width: 100%;
       height: 10px;
-      background: #ffffff;
+      background: var(--paper-white);
       border-radius: 999px;
       overflow: hidden;
       border: 1px solid var(--border-lace);
@@ -139,7 +139,7 @@
     .progress-fill {
       height: 100%;
       width: 0%;
-      background: linear-gradient(90deg, #ffb6d0, #f28cb0);
+      background: linear-gradient(90deg, var(--pink-pastel), var(--pink-soft));
       border-radius: 999px;
       transition: width 0.5s ease;
     }
@@ -148,39 +148,40 @@
     .tabs-nav {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 9px;
       justify-content: center;
-      margin-bottom: 22px;
+      margin-bottom: 24px;
     }
 
     .tab-btn {
       background: var(--paper-white);
       border: 1.5px solid var(--border-lace);
-      color: var(--text-soft);
-      padding: 10px 18px;
+      color: var(--cookie-brown);
+      padding: 9px 16px;
       border-radius: 16px;
       font-family: 'Nunito', sans-serif;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       font-weight: 700;
       cursor: pointer;
       transition: all 0.25s ease;
-      box-shadow: 0 4px 12px rgba(242, 140, 176, 0.08);
+      box-shadow: 0 4px 12px rgba(141, 110, 99, 0.06);
     }
 
     .tab-btn:hover {
-      background: var(--pink-light);
-      color: var(--pink-deep);
+      background: var(--pink-blush);
+      border-color: var(--pink-pastel);
+      color: var(--cookie-dark);
       transform: translateY(-2px);
     }
 
     .tab-btn.active {
-      background: var(--pink-berry);
-      color: #ffffff;
-      border-color: var(--pink-berry);
-      box-shadow: 0 6px 16px rgba(242, 140, 176, 0.35);
+      background: var(--pink-pastel);
+      color: var(--cookie-dark);
+      border-color: var(--pink-soft);
+      box-shadow: 0 6px 16px rgba(244, 172, 183, 0.35);
     }
 
-    /* Barra de acción superior de cada hoja */
+    /* Cabecera de hoja */
     .sheet-header {
       display: flex;
       flex-wrap: wrap;
@@ -195,35 +196,36 @@
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.65rem;
       font-style: italic;
-      color: var(--pink-deep);
+      color: var(--cookie-dark);
     }
 
     .add-btn {
       background: var(--paper-white);
-      border: 1.5px dashed var(--pink-berry);
-      color: var(--pink-deep);
+      border: 1.5px dashed var(--cookie-tan);
+      color: var(--cookie-dark);
       padding: 8px 16px;
       border-radius: 999px;
       font-family: 'Nunito', sans-serif;
-      font-size: 0.86rem;
+      font-size: 0.85rem;
       font-weight: 700;
       cursor: pointer;
       transition: all 0.2s ease;
     }
 
     .add-btn:hover {
-      background: var(--pink-light);
+      background: var(--pink-blush);
+      border-color: var(--pink-soft);
       transform: scale(1.03);
     }
 
-    /* Cuadrícula de Polaroids / Ilusiones */
+    /* Cuadrícula */
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
       gap: 24px;
     }
 
-    /* Estilo Tarjeta Polaroid */
+    /* Tarjeta Polaroid */
     .polaroid-card {
       background: var(--paper-white);
       border-radius: 18px;
@@ -241,7 +243,7 @@
       transform: translateY(-4px);
     }
 
-    /* Cinta adhesiva decorativa arriba */
+    /* Cinta washi color galleta y rosa */
     .washi-tape {
       position: absolute;
       top: -10px;
@@ -249,30 +251,30 @@
       transform: translateX(-50%) rotate(-2deg);
       width: 84px;
       height: 20px;
-      background: rgba(255, 194, 217, 0.75);
-      border-left: 2px dotted rgba(255,255,255,0.8);
-      border-right: 2px dotted rgba(255,255,255,0.8);
+      background: rgba(250, 210, 225, 0.82);
+      border-left: 2px dotted rgba(255, 253, 249, 0.9);
+      border-right: 2px dotted rgba(255, 253, 249, 0.9);
       border-radius: 3px;
     }
 
     .status-pill {
       align-self: flex-start;
-      font-size: 0.72rem;
+      font-size: 0.76rem;
       font-weight: 700;
-      padding: 3px 10px;
+      padding: 4px 11px;
       border-radius: 999px;
       margin-bottom: 10px;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.03em;
     }
 
     .status-pending {
-      background: var(--pink-light);
-      color: var(--text-soft);
+      background: var(--cookie-light);
+      color: var(--cookie-brown);
     }
 
     .status-done {
-      background: #ffe3ee;
-      color: var(--pink-deep);
+      background: var(--pink-blush);
+      color: var(--cookie-dark);
       border: 1px solid var(--pink-pastel);
     }
 
@@ -280,7 +282,7 @@
       width: 100%;
       aspect-ratio: 1 / 1;
       background: var(--bg-cream);
-      border: 1.5px dashed var(--border-lace);
+      border: 1.5px dashed var(--cookie-tan);
       border-radius: 12px;
       display: flex;
       flex-direction: column;
@@ -296,6 +298,7 @@
 
     .photo-frame.has-photo {
       border-style: solid;
+      border-color: var(--border-lace);
       padding: 0;
     }
 
@@ -307,22 +310,22 @@
     }
 
     .placeholder-icon {
-      font-size: 1.8rem;
-      color: var(--pink-berry);
+      font-size: 1.65rem;
+      color: var(--pink-soft);
       margin-bottom: 6px;
     }
 
     .placeholder-text {
       font-size: 0.82rem;
-      color: var(--text-soft);
+      color: var(--cookie-brown);
       line-height: 1.4;
     }
 
     .wish-title {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.25rem;
+      font-size: 1.24rem;
       font-weight: 600;
-      color: var(--text-main);
+      color: var(--cookie-dark);
       line-height: 1.35;
       margin-bottom: 8px;
     }
@@ -330,8 +333,8 @@
     .memory-note {
       font-family: 'Caveat', cursive;
       font-size: 1.22rem;
-      color: var(--pink-deep);
-      background: var(--pink-light);
+      color: var(--cookie-dark);
+      background: var(--pink-blush);
       padding: 8px 12px;
       border-radius: 10px;
       margin-bottom: 10px;
@@ -339,8 +342,8 @@
     }
 
     .memory-date {
-      font-size: 0.75rem;
-      color: var(--text-soft);
+      font-size: 0.78rem;
+      color: var(--cookie-brown);
       margin-bottom: 10px;
       display: block;
     }
@@ -357,37 +360,36 @@
       border-radius: 12px;
       border: none;
       font-family: 'Nunito', sans-serif;
-      font-size: 0.82rem;
+      font-size: 0.84rem;
       font-weight: 700;
       cursor: pointer;
       transition: all 0.2s ease;
     }
 
     .btn-fulfill {
-      background: var(--pink-light);
-      color: var(--pink-deep);
-      border: 1px solid var(--border-lace);
+      background: var(--pink-blush);
+      color: var(--cookie-dark);
+      border: 1px solid var(--pink-pastel);
     }
 
     .btn-fulfill:hover {
-      background: var(--pink-berry);
-      color: #fff;
+      background: var(--pink-pastel);
     }
 
     .btn-delete {
       background: transparent;
-      color: var(--text-soft);
+      color: var(--cookie-tan);
       flex: 0 0 auto;
       padding: 8px 10px;
     }
 
     .btn-delete:hover {
-      color: #d9534f;
+      color: var(--cookie-dark);
     }
 
-    /* Tarjetas especiales para "Cosas que me gustan de ti" */
+    /* Tarjetas para "especialmente para que leas tú." */
     .love-note-card {
-      background: linear-gradient(180deg, #ffffff 0%, #fff5f8 100%);
+      background: linear-gradient(180deg, var(--paper-white) 0%, var(--cookie-light) 100%);
       border: 1.5px solid var(--border-lace);
       border-radius: 18px;
       padding: 22px 20px;
@@ -399,10 +401,10 @@
     }
 
     .love-note-number {
-      font-size: 0.76rem;
+      font-size: 0.78rem;
       font-weight: 700;
-      color: var(--pink-berry);
-      letter-spacing: 0.12em;
+      color: var(--cookie-brown);
+      letter-spacing: 0.1em;
       margin-bottom: 8px;
     }
 
@@ -410,24 +412,24 @@
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.32rem;
       font-style: italic;
-      color: var(--text-main);
+      color: var(--cookie-dark);
       line-height: 1.45;
       margin-bottom: 14px;
     }
 
-    /* Pie de página y herramientas de respaldo */
+    /* Pie de página */
     .footer-tools {
       margin-top: 42px;
       text-align: center;
       padding-top: 22px;
-      border-top: 1.5px dashed var(--border-lace);
+      border-top: 1.5px dashed var(--cookie-tan);
     }
 
     .footer-quote {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
       font-size: 1.15rem;
-      color: var(--text-soft);
+      color: var(--cookie-brown);
       margin-bottom: 14px;
     }
 
@@ -441,25 +443,25 @@
     .small-pill-btn {
       background: var(--paper-white);
       border: 1px solid var(--border-lace);
-      color: var(--text-soft);
+      color: var(--cookie-brown);
       padding: 6px 14px;
       border-radius: 999px;
       font-size: 0.78rem;
       cursor: pointer;
       font-family: 'Nunito', sans-serif;
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .small-pill-btn:hover {
-      background: var(--pink-light);
-      color: var(--pink-deep);
+      background: var(--pink-blush);
+      color: var(--cookie-dark);
     }
 
-    /* Ventana Modal */
+    /* Modal */
     .modal-backdrop {
       position: fixed;
       inset: 0;
-      background: rgba(92, 67, 77, 0.35);
+      background: rgba(93, 64, 55, 0.35);
       backdrop-filter: blur(4px);
       display: none;
       align-items: center;
@@ -479,13 +481,13 @@
       max-width: 440px;
       width: 100%;
       padding: 26px 24px;
-      box-shadow: 0 18px 40px rgba(92, 67, 77, 0.2);
+      box-shadow: 0 18px 40px rgba(93, 64, 55, 0.2);
     }
 
     .modal-title {
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.6rem;
-      color: var(--pink-deep);
+      color: var(--cookie-dark);
       margin-bottom: 14px;
       text-align: center;
     }
@@ -496,9 +498,9 @@
 
     .form-group label {
       display: block;
-      font-size: 0.82rem;
+      font-size: 0.84rem;
       font-weight: 700;
-      color: var(--text-main);
+      color: var(--cookie-dark);
       margin-bottom: 6px;
     }
 
@@ -510,25 +512,25 @@
       border-radius: 12px;
       font-family: 'Nunito', sans-serif;
       font-size: 0.9rem;
-      color: var(--text-main);
+      color: var(--cookie-dark);
       background: var(--bg-cream);
       outline: none;
     }
 
     .form-group input[type="text"]:focus,
     .form-group textarea:focus {
-      border-color: var(--pink-berry);
-      background: #fff;
+      border-color: var(--pink-soft);
+      background: var(--paper-white);
     }
 
     .file-upload-box {
-      border: 1.5px dashed var(--pink-berry);
-      background: var(--pink-light);
+      border: 1.5px dashed var(--pink-soft);
+      background: var(--pink-blush);
       padding: 12px;
       border-radius: 12px;
       text-align: center;
       font-size: 0.84rem;
-      color: var(--pink-deep);
+      color: var(--cookie-dark);
       cursor: pointer;
     }
 
@@ -540,9 +542,9 @@
 
     .btn-primary {
       flex: 1;
-      background: var(--pink-berry);
-      color: #fff;
-      border: none;
+      background: var(--pink-pastel);
+      color: var(--cookie-dark);
+      border: 1px solid var(--pink-soft);
       padding: 10px 16px;
       border-radius: 12px;
       font-weight: 700;
@@ -551,8 +553,8 @@
     }
 
     .btn-secondary {
-      background: var(--pink-light);
-      color: var(--text-soft);
+      background: var(--cookie-light);
+      color: var(--cookie-brown);
       border: none;
       padding: 10px 16px;
       border-radius: 12px;
@@ -565,18 +567,18 @@
 <body>
 
   <div class="notebook-wrapper">
-    <div class="top-ribbon">✧ STRAWBERRY DREAMS · OUR WISHBOOK ✧</div>
+    <div class="top-ribbon">✿ strawberry dreams ♡ our wishbook ✿</div>
 
     <header class="notebook-cover">
-      <div class="bow-badge" id="cover-badge">🎀 Pequeñas promesas por cumplir</div>
-      <h1 id="cover-title">Nuestro Cuaderno de Ilusiones</h1>
+      <div class="bow-badge" id="cover-badge">quiero compartir contigo...</div>
+      <h1 id="cover-title">todos mis deseos junto a ti, ¿me ayudarías a cumplirlos? (˶˃ ᵕ ˂˶)</h1>
       <p class="subtitle" id="cover-subtitle">
-        Un lugar para guardar todo lo que sueño vivir contigo. Cada ilusión pendiente es una promesa, y cada foto Polaroid es un recuerdo que ya hicimos realidad.
+        he creado un lugar en el cual poner cada una de mis ilusiones contigo, porque es una promesa en lugar de un paso más que queda pendiente; quiero emocionarme con cada trocito de nuestra historia desde el comienzo hasta el futuro.
       </p>
 
       <div class="progress-box">
         <div class="progress-header">
-          <span id="progress-label">ILUSIONES CUMPLIDAS · 0 / 0</span>
+          <span id="progress-label">𐙚 nuestro progreso: 0 / 0</span>
           <span id="progress-percent">0%</span>
         </div>
         <div class="progress-track">
@@ -585,414 +587,14 @@
       </div>
     </header>
 
-    <!-- Pestañas de secciones -->
+    <!-- Pestañas del cuaderno -->
     <nav class="tabs-nav" id="tabs-nav"></nav>
 
     <!-- Contenido de la sección activa -->
     <main>
       <div class="sheet-header">
-        <h2 class="sheet-title" id="current-section-title">Citas & Primeras Veces</h2>
-        <button class="add-btn" id="open-add-btn">+ Añadir nueva ilusión</button>
+        <h2 class="sheet-title" id="current-section-title">(♡ˊ͈ ꒳ ˋ͈) pequeños momentos & citas</h2>
+        <button class="add-btn" id="open-add-btn">+ añadir nueva ilusión</button>
       </div>
 
       <div class="cards-grid" id="cards-container"></div>
-    </main>
-
-    <footer class="footer-tools">
-      <p class="footer-quote">“Un deseo escrito, una foto guardada, un recuerdo nuestro para siempre.” ✧</p>
-      <div class="backup-buttons">
-        <button class="small-pill-btn" onclick="exportData()">📥 Guardar copia del cuaderno</button>
-        <button class="small-pill-btn" onclick="document.getElementById('import-file').click()">📤 Cargar copia guardada</button>
-        <input type="file" id="import-file" accept=".json" style="display:none" onchange="importData(event)" />
-      </div>
-    </footer>
-  </div>
-
-  <!-- Modal para Cumplir Ilusión (Subir foto + nota) -->
-  <div class="modal-backdrop" id="fulfill-modal">
-    <div class="modal-box">
-      <h3 class="modal-title">✨ ¡Ilusión Cumplida! ✨</h3>
-      <p id="modal-wish-preview" style="text-align:center; font-size:0.9rem; color:var(--text-soft); margin-bottom:14px;"></p>
-
-      <div class="form-group">
-        <label>Sube la foto Polaroid del momento (opcional)</label>
-        <div class="file-upload-box" onclick="document.getElementById('photo-input').click()">
-          <span id="file-chosen-text">📷 Haz clic aquí para elegir una imagen</span>
-        </div>
-        <input type="file" id="photo-input" accept="image/*" style="display:none" onchange="previewFileName()" />
-      </div>
-
-      <div class="form-group">
-        <label>Fecha del recuerdo</label>
-        <input type="text" id="memory-date-input" placeholder="Ej. 16 de Noviembre, tarde de lluvia..." />
-      </div>
-
-      <div class="form-group">
-        <label>Nota manuscrita para el álbum</label>
-        <textarea id="memory-note-input" rows="2" placeholder="Escribe algo bonito sobre cómo fue este momento..."></textarea>
-      </div>
-
-      <div class="modal-actions">
-        <button class="btn-secondary" onclick="closeModal('fulfill-modal')">Cancelar</button>
-        <button class="btn-primary" onclick="saveFulfillment()">Guardar recuerdo 🎀</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal para Añadir Nueva Ilusión o Nota -->
-  <div class="modal-backdrop" id="add-modal">
-    <div class="modal-box">
-      <h3 class="modal-title" id="add-modal-title">🍓 Escribir nueva ilusión</h3>
-
-      <div class="form-group">
-        <label id="add-input-label">¿Qué te gustaría vivir juntos?</label>
-        <textarea id="new-wish-text" rows="3" placeholder="Ej. Me gustaría tomar chocolate caliente contigo mientras vemos películas..."></textarea>
-      </div>
-
-      <div class="modal-actions">
-        <button class="btn-secondary" onclick="closeModal('add-modal')">Cancelar</button>
-        <button class="btn-primary" onclick="addNewItem()">Añadir al cuaderno ✧</button>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    /* =====================================================================
-       CONFIGURACIÓN FÁCIL DE TU CUADERNO (Puedes editar textos e ilusiones)
-       ===================================================================== */
-    const NOTEBOOK_CONFIG = {
-      badge: "🎀 Pequeñas promesas por cumplir",
-      title: "Nuestro Cuaderno de Ilusiones",
-      subtitle: "Un lugar para guardar todo lo que sueño vivir contigo. Cada ilusión pendiente es una promesa, y cada foto Polaroid es un recuerdo que ya hicimos realidad.",
-      storageKey: "strawberry_dreams_wishbook_v1",
-      sections: [
-        {
-          id: "citas",
-          tabName: "🍓 Citas & Momentos",
-          title: "Citas & Pequeños Momentos",
-          type: "wish",
-          items: [
-            { id: "c1", text: "Me gustaría tomar chocolate caliente contigo en una tarde fría.", done: false, photo: "", date: "", note: "" },
-            { id: "c2", text: "Quedarnos despiertos hasta la madrugada hablando de cualquier cosa.", done: false, photo: "", date: "", note: "" },
-            { id: "c3", text: "Ir a una cafetería bonita y compartir un postre de fresa.", done: false, photo: "", date: "", note: "" },
-            { id: "c4", text: "Sacarnos fotos espontáneas en una cabina o con cámara instantánea.", done: false, photo: "", date: "", note: "" },
-            { id: "c5", text: "Bailar lento en la sala sin importar si hay música o no.", done: false, photo: "", date: "", note: "" },
-            { id: "c6", text: "Hacer un picnic bajo los árboles con nuestras canciones favoritas.", done: false, photo: "", date: "", note: "" }
-          ]
-        },
-        {
-          id: "viajes",
-          tabName: "✈️ Viajes & Escapadas",
-          title: "Viajes & Escapadas Juntos",
-          type: "wish",
-          items: [
-            { id: "v1", text: "Ver el atardecer frente al mar tomados de la mano.", done: false, photo: "", date: "", note: "" },
-            { id: "v2", text: "Hacer un viaje largo en carretera escuchando nuestra playlist.", done: false, photo: "", date: "", note: "" },
-            { id: "v3", text: "Perdernos caminando por las calles de una ciudad nueva.", done: false, photo: "", date: "", note: "" },
-            { id: "v4", text: "Ver las estrellas lejos de las luces de la ciudad.", done: false, photo: "", date: "", note: "" }
-          ]
-        },
-        {
-          id: "familia",
-          tabName: "🏡 Hogar & Familia",
-          title: "Nuestro Hogar & Familia",
-          type: "wish",
-          items: [
-            { id: "f1", text: "Armar juntos nuestro primer arbolito de Navidad y llenar la sala de luces.", done: false, photo: "", date: "", note: "" },
-            { id: "f2", text: "Adoptar una mascota y elegir juntos su nombre.", done: false, photo: "", date: "", note: "" },
-            { id: "f3", text: "Cocinar nuestra cena favorita juntos (aunque algo se nos queme un poco).", done: false, photo: "", date: "", note: "" },
-            { id: "f4", text: "Formar nuestra propia familia y tener un bebé al que llenar de amor.", done: false, photo: "", date: "", note: "" },
-            { id: "f5", text: "Despertar un domingo sin alarmas y desayunar en la cama.", done: false, photo: "", date: "", note: "" }
-          ]
-        },
-        {
-          id: "gustos",
-          tabName: "💌 Cosas que me gustan de ti",
-          title: "Cosas que me gustan de ti",
-          type: "notes",
-          items: [
-            { id: "g1", text: "La forma en que tus ojos brillan cuando hablas de algo que te apasiona." },
-            { id: "g2", text: "Cómo logras hacerme sentir en casa sin importar dónde estemos." },
-            { id: "g3", text: "Tu risa suave cuando intentas ponerte serio pero no puedes." }
-          ]
-        }
-      ]
-    };
-
-    /* =====================================================================
-       LÓGICA DEL CUADERNO (No necesitas tocar nada de aquí abajo)
-       ===================================================================== */
-    let appData = JSON.parse(localStorage.getItem(NOTEBOOK_CONFIG.storageKey)) || NOTEBOOK_CONFIG.sections;
-    let activeSectionId = appData[0].id;
-    let currentEditingItemId = null;
-
-    document.getElementById("cover-badge").textContent = NOTEBOOK_CONFIG.badge;
-    document.getElementById("cover-title").textContent = NOTEBOOK_CONFIG.title;
-    document.getElementById("cover-subtitle").textContent = NOTEBOOK_CONFIG.subtitle;
-
-    function saveData() {
-      try {
-        localStorage.setItem(NOTEBOOK_CONFIG.storageKey, JSON.stringify(appData));
-      } catch (e) {
-        alert("La imagen es muy pesada para la memoria del navegador. Intenta con una foto más ligera.");
-      }
-      updateProgress();
-    }
-
-    function updateProgress() {
-      let totalWishes = 0;
-      let doneWishes = 0;
-
-      appData.forEach(sec => {
-        if (sec.type === "wish") {
-          sec.items.forEach(item => {
-            totalWishes++;
-            if (item.done) doneWishes++;
-          });
-        }
-      });
-
-      const percent = totalWishes === 0 ? 0 : Math.round((doneWishes / totalWishes) * 100);
-      document.getElementById("progress-label").textContent = `ILUSIONES CUMPLIDAS · ${doneWishes} / ${totalWishes}`;
-      document.getElementById("progress-percent").textContent = `${percent}%`;
-      document.getElementById("progress-fill").style.width = `${percent}%`;
-    }
-
-    function renderTabs() {
-      const nav = document.getElementById("tabs-nav");
-      nav.innerHTML = "";
-      appData.forEach(sec => {
-        const btn = document.createElement("button");
-        btn.className = `tab-btn ${sec.id === activeSectionId ? "active" : ""}`;
-        btn.textContent = sec.tabName;
-        btn.onclick = () => {
-          activeSectionId = sec.id;
-          renderTabs();
-          renderCards();
-        };
-        nav.appendChild(btn);
-      });
-    }
-
-    function renderCards() {
-      const section = appData.find(s => s.id === activeSectionId);
-      document.getElementById("current-section-title").textContent = section.title;
-
-      const addBtn = document.getElementById("open-add-btn");
-      addBtn.textContent = section.type === "notes" ? "+ Añadir nota sobre ti" : "+ Añadir nueva ilusión";
-      addBtn.onclick = () => openAddModal(section.type);
-
-      const container = document.getElementById("cards-container");
-      container.innerHTML = "";
-
-      section.items.forEach((item, index) => {
-        if (section.type === "notes") {
-          const noteCard = document.createElement("div");
-          noteCard.className = "love-note-card";
-          noteCard.innerHTML = `
-            <div class="washi-tape"></div>
-            <div>
-              <div class="love-note-number">DETALLE #${String(index + 1).padStart(2, '0')} · ✧</div>
-              <p class="love-note-text">“${item.text}”</p>
-            </div>
-            <div style="text-align:right;">
-              <button class="action-btn btn-delete" title="Eliminar nota" onclick="deleteItem('${item.id}')">🗑️ Quitar</button>
-            </div>
-          `;
-          container.appendChild(noteCard);
-        } else {
-          const card = document.createElement("div");
-          card.className = "polaroid-card";
-
-          const statusHtml = item.done
-            ? `<span class="status-pill status-done">🎀 Ilusión cumplida</span>`
-            : `<span class="status-pill status-pending">☁️ Aún por vivir...</span>`;
-
-          const photoHtml = item.photo
-            ? `<div class="photo-frame has-photo" onclick="openFulfillModal('${item.id}')">
-                 <img src="${item.photo}" alt="Recuerdo Polaroid" />
-               </div>`
-            : `<div class="photo-frame" onclick="openFulfillModal('${item.id}')">
-                 <div class="placeholder-icon">${item.done ? "🌸" : "📷"}</div>
-                 <div class="placeholder-text">${item.done ? "Haz clic para añadir una foto" : "Espacio reservado para nuestra foto Polaroid"}</div>
-               </div>`;
-
-          const noteHtml = item.note ? `<div class="memory-note">“${item.note}”</div>` : "";
-          const dateHtml = item.date ? `<span class="memory-date">📅 ${item.date}</span>` : "";
-
-          card.innerHTML = `
-            <div class="washi-tape"></div>
-            <div>
-              ${statusHtml}
-              ${photoHtml}
-              <h3 class="wish-title">${item.text}</h3>
-              ${noteHtml}
-              ${dateHtml}
-            </div>
-            <div class="card-actions">
-              <button class="action-btn btn-fulfill" onclick="openFulfillModal('${item.id}')">
-                ${item.done ? "✏️ Editar recuerdo" : "✨ Marcar cumplido"}
-              </button>
-              <button class="action-btn btn-delete" title="Eliminar" onclick="deleteItem('${item.id}')">🗑️</button>
-            </div>
-          `;
-          container.appendChild(card);
-        }
-      });
-    }
-
-    function openFulfillModal(itemId) {
-      const section = appData.find(s => s.id === activeSectionId);
-      const item = section.items.find(i => i.id === itemId);
-      currentEditingItemId = itemId;
-
-      document.getElementById("modal-wish-preview").textContent = `“${item.text}”`;
-      document.getElementById("memory-date-input").value = item.date || "";
-      document.getElementById("memory-note-input").value = item.note || "";
-      document.getElementById("photo-input").value = "";
-      document.getElementById("file-chosen-text").textContent = item.photo
-        ? "📷 Cambiar foto actual (opcional)"
-        : "📷 Haz clic aquí para elegir una imagen";
-
-      document.getElementById("fulfill-modal").classList.add("open");
-    }
-
-    function previewFileName() {
-      const input = document.getElementById("photo-input");
-      if (input.files && input.files[0]) {
-        document.getElementById("file-chosen-text").textContent = `✅ Lista: ${input.files[0].name}`;
-      }
-    }
-
-    function saveFulfillment() {
-      const section = appData.find(s => s.id === activeSectionId);
-      const item = section.items.find(i => i.id === currentEditingItemId);
-
-      item.done = true;
-      item.date = document.getElementById("memory-date-input").value.trim();
-      item.note = document.getElementById("memory-note-input").value.trim();
-
-      const fileInput = document.getElementById("photo-input");
-      if (fileInput.files && fileInput.files[0]) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-          // Redimensionar suavemente para no saturar el almacenamiento local
-          const img = new Image();
-          img.onload = function() {
-            const canvas = document.createElement("canvas");
-            const maxDim = 600;
-            let width = img.width;
-            let height = img.height;
-            if (width > maxDim || height > maxDim) {
-              if (width > height) {
-                height *= maxDim / width;
-                width = maxDim;
-              } else {
-                width *= maxDim / height;
-                height = maxDim;
-              }
-            }
-            canvas.width = width;
-            canvas.height = height;
-            const ctx = canvas.getContext("2d");
-            ctx.drawImage(img, 0, 0, width, height);
-            item.photo = canvas.toDataURL("image/jpeg", 0.82);
-            saveData();
-            renderCards();
-            closeModal("fulfill-modal");
-          };
-          img.src = e.target.result;
-        };
-        reader.readAsDataURL(fileInput.files[0]);
-      } else {
-        saveData();
-        renderCards();
-        closeModal("fulfill-modal");
-      }
-    }
-
-    function openAddModal(type) {
-      document.getElementById("new-wish-text").value = "";
-      document.getElementById("add-modal-title").textContent =
-        type === "notes" ? "💌 Escribir algo que me gusta de ti" : "🍓 Escribir nueva ilusión";
-      document.getElementById("add-input-label").textContent =
-        type === "notes" ? "¿Qué detalle quieres guardar?" : "¿Qué te gustaría vivir juntos?";
-      document.getElementById("add-modal").classList.add("open");
-    }
-
-    function addNewItem() {
-      const text = document.getElementById("new-wish-text").value.trim();
-      if (!text) return;
-
-      const section = appData.find(s => s.id === activeSectionId);
-      const newId = "item_" + Date.now();
-
-      if (section.type === "notes") {
-        section.items.push({ id: newId, text });
-      } else {
-        section.items.push({
-          id: newId,
-          text,
-          done: false,
-          photo: "",
-          date: "",
-          note: ""
-        });
-      }
-
-      saveData();
-      renderCards();
-      closeModal("add-modal");
-    }
-
-    function deleteItem(itemId) {
-      if (!confirm("¿Seguro que quieres quitar esto del cuaderno?")) return;
-      const section = appData.find(s => s.id === activeSectionId);
-      section.items = section.items.filter(i => i.id !== itemId);
-      saveData();
-      renderCards();
-    }
-
-    function closeModal(modalId) {
-      document.getElementById(modalId).classList.remove("open");
-    }
-
-    // Exportar e Importar para compartir recuerdos entre compañeros de rol
-    function exportData() {
-      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(appData));
-      const downloadAnchor = document.createElement("a");
-      downloadAnchor.setAttribute("href", dataStr);
-      downloadAnchor.setAttribute("download", "strawberry-dreams-recuerdos.json");
-      document.body.appendChild(downloadAnchor);
-      downloadAnchor.click();
-      downloadAnchor.remove();
-    }
-
-    function importData(event) {
-      const file = event.target.files[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        try {
-          const imported = JSON.parse(e.target.result);
-          if (Array.isArray(imported)) {
-            appData = imported;
-            saveData();
-            renderTabs();
-            renderCards();
-            alert("🎀 ¡Recuerdos cargados en el cuaderno!");
-          }
-        } catch (err) {
-          alert("El archivo no es válido.");
-        }
-      };
-      reader.readAsText(file);
-    }
-
-    // Inicializar
-    renderTabs();
-    renderCards();
-    updateProgress();
-  </script>
-</body>
-</html>
